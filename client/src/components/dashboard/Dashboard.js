@@ -45,30 +45,30 @@ class Dashboard extends Component {
     let tests = this.props.tests;
 
     return (
+      
       <div className="container">
-        <br />
+        {/* <br />
         <div className="Header">
-          <h1 style={{display: 'inline-block'}}>Capsim Quiz</h1>
-        </div>
+          <h1 style={{display: 'inline-block'}}>Test</h1>
+        </div> */}
         <div>
-          <section className="jumbotron">
-            {/*{ this.state.loading ?(*/}
-              <form className="Articles" onSubmit={this.onSubmit}>
-                <ol>
-                  {
-                    tests.map((test, i) => (
-                      <li key={i}>
-                        <p>{test.question}</p>
-                        <div>
-                          {test.type == "multiple"? <MultiTest test={test} id={i} /> : <SingleTest test={test} id={i} />}
-                        </div>
-                      </li>
-                    ))
-                  }
-                </ol>
-                <button className="btn btn-success item-right">Submit</button>
-              </form>
-            {/*) : <h1>Loading...</h1>}*/}
+          <section className="jumbotron fix1">
+            <h2 className="quiztitle">Capsim Quiz</h2>
+            <form className="Articles" onSubmit={this.onSubmit}>
+              <ol>
+                {
+                  tests.map((test, i) => (
+                    <li key={i}>
+                      <p>{test.question}</p>
+                      <div>
+                        {test.type == "multiple"? <MultiTest test={test} id={i} /> : <SingleTest test={test} id={i} />}
+                      </div>
+                    </li>
+                  ))
+                }
+              </ol>
+              <button className="btn btn-success" style={{marginBottom: '50px', marginRight: '50px', float: 'right'}}>Submit</button>
+            </form>
           </section>
         </div>
       </div>

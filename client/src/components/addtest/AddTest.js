@@ -47,7 +47,10 @@ class AddTest extends Component {
         answer[i].mark = 0;
       }
     }
-    answer[index][e.target.name] = e.target.value;
+
+    let p = e.target.value > 5 ? 5 : e.target.value;
+
+    answer[index][e.target.name] = p;
 
     this.setState({answer: answer})
   }

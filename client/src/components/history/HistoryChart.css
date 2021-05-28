@@ -1,0 +1,14 @@
+.Header {
+  padding: 12px 0px 0px 12px;
+  box-shadow: none !important;
+  border-radius: 0% !important;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: #DCDCDC;
+}
+
+.fix1 {
+	background-color: white;
+	border: 1px solid #ccc;
+	padding: 0px;
+}

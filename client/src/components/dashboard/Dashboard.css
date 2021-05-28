@@ -3,11 +3,27 @@
 }
 
 .Header {
-    background: 3px 3px #ccc;
+    box-shadow: 3px 3px #ccc;
     border-radius: 5px;
     padding: 12px 0px 0px 12px;
 }
 
 .ShowArticlesButton {
     box-shadow: 3px 3px #547393;
+}
+
+.quiztitle {
+	margin-bottom: 50px;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	background-color: #DCDCDC;
+}
+
+.Articles {
+	display: inline-block;
+	width: 100%;
+}
+.container {
+	background-color: #F8F8FF;
+	padding-top: 15px;
 }
